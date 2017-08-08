@@ -17,12 +17,7 @@ class App extends Component {
       multiplier: 1
     }
   }
-
-  componentDidMount() {
-    // console.log(new Date() - performance.timing.navigationStart)
-  }
-
-
+  
   componentDidUpdate() {
     Perf.stop('Perf');
     Perf.printInclusive();
